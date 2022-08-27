@@ -1,0 +1,194 @@
+/* Flex*/
+#flex{
+    border: 2px solid olive;
+}
+
+#flex__container{
+    display: flex;
+    margin: 10px;
+}
+
+.flex__item {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+
+#content__serial{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#parent{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: pink;
+}
+
+#child{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#round{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+#triangle__up{
+    width: 0;
+    height: 0;
+    margin: 30px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid yellow;
+}
+
+#triangle__down{
+    width: 0;
+    height: 0;
+    margin: 30px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid yellow;
+}
+
+#triangle__right{
+    width: 0;
+    height: 0;
+    margin: 10px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid yellow;
+}
+
+#triangle__left{
+    width: 0;
+    height: 0;
+    margin: 10px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid yellow;
+}
+
+#visibility__hidden{
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    background-color: #fff;
+}
+
+#display__none{
+    width: 100px;
+    height: 100px;
+    display: none;
+    background-color: #fff;
+}
+
+/* Grid */
+.grid{
+    border: 2px solid olive;
+}
+
+#grid__container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid__item {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+
+.overlap__grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 200px;
+    height: 200px;
+}
+
+.overlap__grid__image1, .overlap__grid__image2, .overlap__grid__image3, .overlap__grid__image4{
+    grid-row: 1 / 2;
+}
+
+.overlap__grid__image1{
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 4;
+}
+
+.overlap__grid__image2{
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / -1;
+}
+
+.overlap__grid__image3{
+    width: 100%;
+    height: 100%;
+    grid-column: 3 / -1;
+}
+
+.overlap__grid__image4{
+    width: 100%;
+    height: 100%;
+    grid-column: 4 / -1;
+}
+
+.pseudo__elements::before{
+    color: green;
+    content: "< BEFORE!";
+}
+
+.pseudo__elements{
+    width: 200px;
+    height: 200px;
+}
+
+.pseudo__elements::after{
+    color: blue;
+    content: " AFTER >";
+}
+
+.pseudo__class{
+    text-align: center;
+}
+
+.pseudo__class:hover{
+    color: green;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content__box{
+    width: 150px;
+    height: 70px;
+    background-color: yellow;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid red;
+    box-sizing: content-box;
+}
+
+.border__box{
+    width: 150px;
+    height: 70px;
+    background-color: yellow;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
