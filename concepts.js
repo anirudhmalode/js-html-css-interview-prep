@@ -1,8 +1,3 @@
-const array1 = [1, 2, 3, 4, 5];
-console.log("Concat --->", array1.concat(array1), [ ...array1, ...array1 ]);
-
-// =============================================================================================
-
 // Function scope --> var
 function calculate (){
     for(var i=0; i<5; i++){
@@ -43,45 +38,6 @@ function getbase(baseNumber){
 }
 var multiplyNumber = getbase(9);
 console.log("Closure 2 --->", multiplyNumber(26));
-
-// ==============================================================================================
-
-// Fizzbuzz Challenge
-for(let i=0; i<100; i++){
-    let f = i%3 === 0;
-    let b = i%5 === 0;
-
-    console.log(f && b ? "FIZZBUZZ" : (f ? "FIZZ" : "BUZZ"));
-}
-
-// ==============================================================================================
-
-// If 2 strings are anagrams of each other
-const first = "Army";
-const second = "Mary";
-
-let a = first.toLowerCase().split("").sort().join("");
-let b = second.toLowerCase().split("").sort().join("");
-console.log("Is Anagram --->", a === b);
-
-// ==============================================================================================
-
-// Create _counter using closure
-function privateCounter(){
-    let _counter = 0;
-    return {
-        add: function(N){
-            return _counter += N;
-        },
-        retrieve: function(){
-            console.log("Current _counter is --->", _counter);
-        }
-    }
-}
-
-var getCounter = privateCounter();
-getCounter.add(109);
-getCounter.retrieve();
 
 // ==============================================================================================
 
