@@ -116,7 +116,7 @@ const primeChecker = (num) => {
     console.log("No! Not prime");
   }
 };
-primeChecker(23);
+primeChecker(12);
 
 // Call multiple api's at once using promise all.
 const getUsers = async () => {
